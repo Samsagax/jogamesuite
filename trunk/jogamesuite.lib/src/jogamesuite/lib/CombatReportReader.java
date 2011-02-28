@@ -178,7 +178,7 @@ public class CombatReportReader extends ReaderFormatter {
             Matcher destroyedMatcher = Pattern.compile(
                     "\\Q"
                     + player.getName()
-                    + " fué destruido.\\E",
+                    + " fue destruido.\\E",
                     PATTERN_FLAG).matcher(lastRound);
             boolean found = headMatcher.find(cursor);
             boolean destroyed = destroyedMatcher.find(cursor);
